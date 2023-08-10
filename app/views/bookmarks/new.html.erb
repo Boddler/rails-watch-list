@@ -1,8 +1,10 @@
+<br>
 <div class="container">
   <h1>Add Movie to List</h1>
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.input :comment %>
-    <%= f.association :movie %>
+    <%= f.association :movie, collection: @movies, include_blank: false %>
     <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
   <% end %>
+  <%= link_to "Home", lists_path, class: "btn btn-dark mt-3 mt-2" %>
 </div>
