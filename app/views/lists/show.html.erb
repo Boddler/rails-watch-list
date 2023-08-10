@@ -1,0 +1,15 @@
+<div class="container">
+  <h1><%= @list.name %></h1>
+    <div class="cards">
+      <% @list.bookmarks.each do |bookmark|%>
+        <div>
+          <div class="card-category color:white" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://picsum.photos/1200/180" %>)">
+            <%= "#{bookmark.movie.title}" %><%= link_to "Delete Movie", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "btn btn-warning mt-3 mt-2" %>
+            <br>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <%= link_to "Home", lists_path, class: "btn btn-dark mt-3 mt-2" %>
+  <%= link_to "Add Movie", new_list_bookmark_path(@list), class: "btn btn-dark mt-3 mt-2" %>
+  </div>
