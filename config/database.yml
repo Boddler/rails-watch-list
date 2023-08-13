@@ -5,8 +5,11 @@ default: &default
 
 development:
   <<: *default
-  database: rails-moviechanpuru_development
+  database: rails-watch-list_development
 
 test:
   <<: *default
-  database: rails-moviechanpuru_test
+  database: rails-watch-list_test
+
+production:
+  <<: *default
