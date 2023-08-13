@@ -2,7 +2,7 @@
 <div class="container">
   <h1>Add Movie to List</h1>
   <%= simple_form_for [@list, @bookmark] do |f| %>
-    <%= f.input :comment %>
+    <%= f.input :comment, autoaomplete: "off" %>
     <%= f.association :movie, collection: @movies, include_blank: false %>
     <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
   <% end %>
