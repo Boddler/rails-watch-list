@@ -4,11 +4,11 @@
     <h1><%= @list.name %></h1>
     <div class="row">
       <% @list.bookmarks.each do |bookmark|%>
-        <div class="col-md-2 list-show-box">
+        <div class="col-md-auto list-show-box">
           <div class="card-movie" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "#{bookmark.movie.poster_url}" %>)">
           </div>
           <div class="d-flex justify-content-between align-items-center pl-5">
-          <%= "#{bookmark.movie.title} " %><%= link_to "🗑️", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "btn btn-dark mt-3 mt-2 mb-3" %>
+          <span style="max-width: 150px"><%= "#{bookmark.movie.title}" %></span><%= link_to "🗑️", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "btn btn-dark mt-3 mt-2 mb-3" %>
           </div>
         </div>
       <% end %>

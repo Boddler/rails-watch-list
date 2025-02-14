@@ -34,8 +34,23 @@
   background-position: center center;
   margin-right: 2px;
   margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .list-show-box {
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.delete-list {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 4px;
+  border-radius: 45%;
+  background-color: rgb(136, 40, 40);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
 }
