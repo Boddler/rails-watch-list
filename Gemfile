@@ -65,16 +65,13 @@ group :development do
   # gem "spring"
 end
 
-gem 'rspec-rails', group: [ :test ]
-gem 'rails-controller-testing', group: [ :test ]
+gem "rspec-rails", group: [:test]
+gem "rails-controller-testing", group: [:test]
 
 # Added
 gem "bootstrap", "~> 5.2"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
-<<<<<<< HEAD
 gem "dotenv-rails"
-=======
->>>>>>> 8d25ce0232a995c8c6b34ce067d200db4e0ae16a
 gem "cloudinary"

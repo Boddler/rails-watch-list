@@ -12,11 +12,10 @@
 @import "pages/index";
 
 .btn.btn-primary {
-  display: block;
   margin: 5px;
   padding: 10px;
   text-align: center;
-  width: 33%;
+  // width: 33%;
   color: white;
 }
 
@@ -33,4 +32,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.list-show-box {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
