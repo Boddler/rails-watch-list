@@ -10,7 +10,7 @@
               <%= list.name %>
             </div>
           <% end %>
-          <%= link_to list_path(list), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } do %>
+          <%= link_to list_path(list), class: "trash-positioning", data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } do %>
             <div class="delete-list">
               🗑️
             </div>
